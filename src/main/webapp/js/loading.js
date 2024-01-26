@@ -6,8 +6,8 @@ $(document).ready(function() {
     let loadingBar = localStorage.getItem("loadingBar");
     loadingBar = loadingBar != null && loadingBar < 1 ? parseFloat(loadingBar) : 0;
     localStorage.setItem("loadingBar", loadingBar);
-    finishBar();
-    
+    let progressInterval;
+
     function finishBar() {
         NProgress.set(loadingBar);
         setTimeout(function() {
@@ -18,8 +18,9 @@ $(document).ready(function() {
 
     function showBar() {
         NProgress.start();
+        clearInterval(progressInterval);
         let count = 0;
-        setInterval(function () {
+        progressInterval = setInterval(function () {
             let inc = 0.005 * ++count;
             if(inc > 0.03) {
                 inc = 0.03;
@@ -34,4 +35,10 @@ $(document).ready(function() {
             localStorage.setItem("loadingBar", loadingBar);
         }, 1000);
     }
+
+    $(window).on('beforeunload', function() {
+        NProgress.done();
+        localStorage.setItem("loadingBar", 1);
+        clearInterval(progressInterval);
+    });
 });

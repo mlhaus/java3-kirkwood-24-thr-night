@@ -1,7 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
+<%@include file="/WEB-INF/shared/top.jsp"%>
     <title>Java 3 Web Applications</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
@@ -35,5 +32,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+<%@include file="/WEB-INF/shared/bottom.jsp"%>

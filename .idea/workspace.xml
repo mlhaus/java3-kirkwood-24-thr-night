@@ -9,30 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/CommunicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/bottom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/demos/artist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/demos/artist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/ArtistJsonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/ArtistJsonServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/loading.js" afterDir="false" />
     </list>
-    <list id="818929ef-1b46-4347-a971-161e13a0344c" name="Changes by andres" comment="" />
-    <list id="c7a2c32b-07ae-41b7-a4d1-4448fda3b985" name="Changes by Jared" comment="" />
-    <list id="238ccd8f-b5ef-42f5-bbe0-1eadb195dd1c" name="Changes by jbroh" comment="" />
-    <list id="4af1a2af-a9e0-4dc7-bd0d-790d7e57e5d1" name="Changes by jjbec" comment="" />
-    <list id="d8c1c97a-889c-41f7-a0e9-5124e58483a3" name="Changes by logan" comment="" />
-    <list id="db6aa394-02cc-4241-8186-3088a8ad8d39" name="Changes by matth" comment="" />
+    <list id="16da2b4c-c47e-405e-a668-868bd3ec80e0" name="Changes by jaredroberts" comment="" />
+    <list id="4af1a2af-a9e0-4dc7-bd0d-790d7e57e5d1" name="Changes by jjbec" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/error.jsp" afterDir="false" />
+    </list>
     <list id="872f8f5b-9656-4c36-9014-25a37fe5d28a" name="Changes by Randle" comment="" />
-    <list id="8829bbc2-f34a-450c-b019-861d81a4454c" name="Changes by School Account" comment="" />
-    <list id="c9d5284e-16c0-4215-9184-d1bac900127c" name="Changes by tooth" comment="" />
-    <list id="a22f7b01-18fd-4877-ba71-a02ac2394ef5" name="Changes by waemc" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,8 +32,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -105,7 +94,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CommunicationService">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -281,8 +270,17 @@
       <workItem from="1705624547500" duration="8932000" />
       <workItem from="1705642300702" duration="6889000" />
       <workItem from="1705726496798" duration="1179000" />
-      <workItem from="1706225922587" duration="9561000" />
+      <workItem from="1706225922587" duration="13499000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Email Service">
+      <option name="closed" value="true" />
+      <created>1706236211459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706236211459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +291,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add Email Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Email Service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,7 +315,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/ArtistJsonServlet.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

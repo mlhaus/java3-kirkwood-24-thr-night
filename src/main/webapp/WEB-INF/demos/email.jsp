@@ -10,15 +10,15 @@
 </head>
 <body>
 <h1>Send Email</h1>
-<c:if test="${not empty success}">
-<div class="alert alert-success" role="alert">
-  ${success}
-</div>
-</c:if>
+<c:choose>
+  <c:when test="${not empty result and result eq true}"><p>Email sent</p></c:when>
+  <c:when test="${not empty result and result eq false}"><p>Email not sent</p></c:when>
+  <c:otherwise><p>Use this form to send an email</p></c:otherwise>
+</c:choose>
 <form action="${appURL}/email" method="post">
   <!-- Email Address -->
   <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email" required>
+  <input type="text" id="email" name="email" required>
   <br>
 
   <!-- Subject -->

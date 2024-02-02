@@ -22,8 +22,8 @@ public class EmailServlet extends HttpServlet {
         String email = req.getParameter("email");
         String subject = req.getParameter("subject");
         String message = req.getParameter("message");
-        CommunicationService.sendEmail(email, subject, message);
-        req.setAttribute("success", "Email sent");
+        boolean result = CommunicationService.sendEmail(email, subject, message);
+        req.setAttribute("result", result);
         req.getRequestDispatcher("WEB-INF/demos/email.jsp").forward(req, resp);
     }
 }

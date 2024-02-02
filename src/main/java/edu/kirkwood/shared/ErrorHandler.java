@@ -1,5 +1,6 @@
 package edu.kirkwood.shared;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -16,15 +17,20 @@ public class ErrorHandler extends HttpServlet {
         String errorCode = req.getAttribute(RequestDispatcher.ERROR_STATUS_CODE) + "";
         String exceptionType = req.getAttribute(RequestDispatcher.ERROR_EXCEPTION_TYPE) + "";
         String errorMsg = req.getAttribute(RequestDispatcher.ERROR_MESSAGE) + "";
+        String servlet = req.getAttribute(RequestDispatcher.ERROR_SERVLET_NAME) + "";
 
         String result = "Error code: " + errorCode;
         if(!exceptionType.equals("")) {
-            result += "\nException: " + exceptionType;
+            result += "<br>\nException: " + exceptionType;
         }
-        result += "\nMessage: " + errorMsg;
+        result += "<br>\nMessage: " + errorMsg;
+        result += "<br>\nServlet: " + servlet;
         System.err.println(result);
         
-        //send an email if a 500 server error occurs.
+
+        if(!errorCode.equals("404")) {
+            CommunicationService.sendEmail(Dotenv.load().get("ADMIN_EMAIL"), "Server error occured", result);
+        }
 
         
         req.setAttribute("pageTitle", "Error");

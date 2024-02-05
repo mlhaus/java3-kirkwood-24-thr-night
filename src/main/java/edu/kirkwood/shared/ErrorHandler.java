@@ -29,7 +29,7 @@ public class ErrorHandler extends HttpServlet {
         
 
         if(!errorCode.equals("404")) {
-            CommunicationService.sendEmail(Dotenv.load().get("ADMIN_EMAIL"), "Server error occured", result);
+            CommunicationService.sendEmail(Dotenv.load().get("ADMIN_EMAIL"), "Unknown error occured", result);
         }
 
         

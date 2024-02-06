@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/ErrorHandler.java" afterDir="false" />
-    </list>
+    <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,6 +269,7 @@
       <workItem from="1706585478641" duration="17000" />
       <workItem from="1706831180714" duration="12843000" />
       <workItem from="1707111801491" duration="810000" />
+      <workItem from="1707112616276" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Add Email Service">
       <option name="closed" value="true" />

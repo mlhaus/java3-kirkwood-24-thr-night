@@ -30,5 +30,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
 </main>
+
 <%@include file="/WEB-INF/learnx/bottom.jsp"%>

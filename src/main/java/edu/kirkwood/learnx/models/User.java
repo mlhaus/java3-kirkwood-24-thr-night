@@ -87,6 +87,11 @@ public class User {
     }
 
     public void setPassword(char[] password) {
+        // The only time the password should be null is when I set the activeUser session attribute
+        if(password == null) {
+            this.password = password;
+            return;
+        }
         String passwordStr = String.valueOf(password);
         Matcher matcher = MyValidators.passwordPattern.matcher(passwordStr);
         if(!matcher.matches()) {

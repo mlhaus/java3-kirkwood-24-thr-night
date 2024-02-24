@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -30,6 +31,9 @@ public class SignupServlet extends HttpServlet {
         String[] terms = req.getParameterValues("checkbox-1");
         if(terms == null) {
             terms = new String[]{"0"};
+        }
+        if(password1 == null) {
+            password1 = "";
         }
 
         Map<String, String> results = new HashMap<>();
@@ -75,6 +79,13 @@ public class SignupServlet extends HttpServlet {
                 message += "<p>Please enter code <b>" + code + "</b> to activate your account.</p>";
                 CommunicationService.sendEmail(email, subject, message);
                 // To do: Display error if the email could not be sent
+                HttpSession session = req.getSession(); // Get the existing session
+                session.invalidate(); // Remove all existing session data
+                session = req.getSession(); // Create new session
+                session.setAttribute("code", twoFactorInfo.get(0));
+                session.setAttribute("email", email);
+                resp.sendRedirect("confirm");
+                return;
             }
             // To do: Display error saying "Could not add user" if twoFactorInfo is empty
             

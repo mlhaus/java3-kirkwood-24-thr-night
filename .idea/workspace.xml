@@ -10,30 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/PrivacyPolicyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/privacy-policy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421/storage_v2/_src_/schema/marc-kw-database.tPlShw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421/storage_v2/_src_/schema/marc-kw-database.tPlShw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421/storage_v2/_src_/schema/marc-kw-database.tPlShw.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421/storage_v2/_src_/schema/marc-kw-database.tPlShw.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Confirm2faCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/SignupServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/learnx.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/learnx.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <list id="12920be7-8785-4840-a3d5-763c15d70d26" name="Changes by ahale" comment="" />
+    <list id="4f483e7e-0c33-4dde-8cfd-3759c53cfa8c" name="Changes by baylee" comment="" />
     <list id="5333a45e-addf-4f14-8289-cb39b3fa9f2f" name="Changes by Jared" comment="" />
-    <list id="c7b66ae6-34ab-43c8-ba50-c094556a661a" name="Changes by jrhsa" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyValidators.java" afterDir="false" />
+    <list id="5808c6b3-525d-48a4-9859-4ad340402a34" name="Changes by jbroh" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/2fa-confirm.jsp" afterDir="false" />
     </list>
-    <list id="e1ce2b8c-2e73-4fad-bf26-b01960e16db2" name="Changes by Randle" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,8 +35,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -320,6 +311,8 @@
       <workItem from="1708039386243" duration="15156000" />
       <workItem from="1708142334594" duration="955000" />
       <workItem from="1708466472209" duration="724000" />
+      <workItem from="1708639921240" duration="2374000" />
+      <workItem from="1708649321651" duration="9026000" />
     </task>
     <task id="LOCAL-00001" summary="Add Email Service">
       <option name="closed" value="true" />

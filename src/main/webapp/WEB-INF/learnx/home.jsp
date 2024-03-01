@@ -9,6 +9,12 @@
             </div>
             <c:remove var="flashMessageSuccess" scope="session"></c:remove>
         </c:when>
+        <c:when test="${not empty flashMessageWarning}">
+            <div class="alert alert-warning my-2">
+                    ${flashMessageWarning}
+            </div>
+            <c:remove var="flashMessageWarning" scope="session"></c:remove>
+        </c:when>
     </c:choose>
 
     <%-- Add a jumbtron --%>

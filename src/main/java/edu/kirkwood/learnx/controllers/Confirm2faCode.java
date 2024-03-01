@@ -2,6 +2,7 @@ package edu.kirkwood.learnx.controllers;
 
 import edu.kirkwood.learnx.data.UserDAO;
 import edu.kirkwood.learnx.models.User;
+import edu.kirkwood.shared.CommunicationService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -19,6 +20,18 @@ import java.util.Map;
 public class Confirm2faCode extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String resend = req.getParameter("resend");
+        if(resend != null) {
+            HttpSession session = req.getSession();
+            String code = (String)session.getAttribute("code");
+            String email = (String)session.getAttribute("email");
+            if(code != null && email != null) {
+                boolean sent = CommunicationService.sendNewUserEmail(code, email);
+                if(sent) {
+                    req.setAttribute("codeResent", "The code was resent");
+                }
+            }
+        }
         req.setAttribute("pageTitle", "Confirm Your Code");
         req.getRequestDispatcher("WEB-INF/learnx/2fa-confirm.jsp").forward(req, resp);
     }

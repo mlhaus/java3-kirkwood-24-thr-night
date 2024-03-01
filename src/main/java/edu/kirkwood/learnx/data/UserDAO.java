@@ -1,12 +1,15 @@
 package edu.kirkwood.learnx.data;
 
 import edu.kirkwood.learnx.models.User;
+import edu.kirkwood.shared.CommunicationService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class UserDAO extends Database {
     public static void main(String[] args) {
@@ -123,4 +126,23 @@ public class UserDAO extends Database {
     }
 
 
+    public static boolean passwordReset(String email, HttpServletRequest req) {
+        User userFromDatabase = get(email);
+        if(userFromDatabase != null) {
+            try(Connection connection = getConnection()) {
+                String uuid = String.valueOf(UUID.randomUUID());
+                // To do: check database if uuid already exists
+                try(CallableStatement statement = connection.prepareCall("{CALL sp_add_password_reset(?, ?)}")) {
+                    statement.setString(1, email);
+                    statement.setString(2, uuid);
+                    statement.executeUpdate();
+                }
+                return CommunicationService.sendPasswordResetEmail(email, uuid, req);
+            } catch (SQLException e) {
+                System.out.println("Likely bad SQL query");
+                System.out.println(e.getMessage());
+            }
+        }
+        return false;
+    }
 }

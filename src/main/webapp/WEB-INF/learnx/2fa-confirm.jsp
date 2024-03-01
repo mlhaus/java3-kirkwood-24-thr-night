@@ -8,6 +8,9 @@
             <c:if test="${not empty results.codeError}">
                 <p class="alert alert-danger my-2">${results.codeError}</p>
             </c:if>
+            <c:if test="${not empty codeResent}">
+                <p class="alert alert-success my-2">${codeResent}</p>
+            </c:if>
             <form action="${appURL}/confirm" method="post">
                 <div class="mb-4">
                     <label for="inputCode" class="form-label">Code</label>

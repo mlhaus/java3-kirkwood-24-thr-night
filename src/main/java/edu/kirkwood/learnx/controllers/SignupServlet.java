@@ -3,6 +3,8 @@ package edu.kirkwood.learnx.controllers;
 import edu.kirkwood.learnx.data.UserDAO;
 import edu.kirkwood.learnx.models.User;
 import edu.kirkwood.shared.CommunicationService;
+import edu.kirkwood.shared.Helpers;
+import edu.kirkwood.shared.MyValidators;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -14,6 +16,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
 
 @WebServlet("/signup")
 public class SignupServlet extends HttpServlet {
@@ -28,6 +31,7 @@ public class SignupServlet extends HttpServlet {
         String email = req.getParameter("inputEmail1");
         String password1 = req.getParameter("inputPassword1");
         String password2 = req.getParameter("inputPassword2");
+        String dob = req.getParameter("inputDOB");
         String[] terms = req.getParameterValues("checkbox-1");
         if(terms == null) {
             terms = new String[]{"0"};
@@ -40,6 +44,7 @@ public class SignupServlet extends HttpServlet {
         results.put("email", email);
         results.put("password1", password1);
         results.put("password2", password2);
+        results.put("dob", dob);
         results.put("terms", terms[0]);
 
         User user = new User();
@@ -63,12 +68,22 @@ public class SignupServlet extends HttpServlet {
         if(!password1.equals(password2)) {
             results.put("password2Error", "Passwords don't match");
         }
+
+        if(!MyValidators.datePattern.matcher(dob).matches()) {
+            results.put("dobError", "Invalid Date of Birth");
+        } else {
+            if (Helpers.ageInYears(dob) < 13) {
+                results.put("dobError", "You must be at least 13 years old to register for an account");
+            }
+        }
+
         if(terms == null || !terms[0].equals("agree")){
             results.put("termsOfServiceError", "You must agree to our terms of service");
         }
 
         if (!results.containsKey("emailError") && !results.containsKey("password1Error")
                 && !results.containsKey("password2Error") && !results.containsKey("termsOfServiceError")
+                && !results.containsKey("dobError")
         ) {
             List<String> twoFactorInfo = UserDAO.add(user);
             if(!twoFactorInfo.isEmpty()) {

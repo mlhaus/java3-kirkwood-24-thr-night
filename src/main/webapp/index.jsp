@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container py-4 text-center">
-    <h1 class="my-4">Java 3 Web Applications</h1>
+    <h1 class="my-4">Marc's Java 3 Web Applications</h1>
     <div class="row justify-content-center" style="text-align: center;">
         <div class="col-xs-12 col-sm-6 col-lg-5 mb-4">
             <h3>Personal Projects</h3>

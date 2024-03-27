@@ -11,9 +11,20 @@
                             <c:if test="${not empty results.loginFail}">
                                 <p class="alert alert-danger my-2">${results.loginFail}</p>
                             </c:if>
+                            <c:if test="${not empty flashMessageSuccess}">
+                                <p class="alert alert-success my-2">${flashMessageSuccess}</p>
+                                <c:remove var="flashMessageSuccess" scope="session"></c:remove>
+                            </c:if>
+                            <c:if test="${not empty flashMessageWarning}">
+                                <p class="alert alert-warning my-2">${flashMessageWarning}</p>
+                                <c:remove var="flashMessageWarning" scope="session"></c:remove>
+                            </c:if>
 
                             <!-- Form START -->
                             <form method="post" action="${appURL}/login">
+                                <c:if test="${not empty redirect}">
+                                <input type="hidden" name="redirect" value="${redirect}">
+                                </c:if>
                                 <!-- Email -->
                                 <div class="mb-4">
                                     <label for="inputEmail1" class="form-label">Email address *</label>

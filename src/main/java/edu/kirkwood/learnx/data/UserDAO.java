@@ -145,4 +145,50 @@ public class UserDAO extends Database {
         }
         return false;
     }
+
+    public static String getPasswordReset(String token) {
+        String email = "";
+        try(Connection connection = getConnection();
+            CallableStatement statement = connection.prepareCall("{ CALL sp_get_password_reset(?) }");
+        ) {
+            statement.setString(1, token);
+            try(ResultSet resultSet = statement.executeQuery()) {
+                if(resultSet.next()) {
+                    email = resultSet.getString("email");
+                    Instant created_at = resultSet.getTimestamp("created_at").toInstant();
+                    // To do: Only set the email if the Instant was created less than 30 minutes ago
+                    
+                }
+            }
+
+        } catch (SQLException e) {
+            System.out.println("Likely bad SQL query");
+            System.out.println(e.getMessage());
+        }
+        return email;
+    }
+
+    public static boolean resetPassword(String email, String password) {
+        try(Connection connection = getConnection();
+            CallableStatement statement = connection.prepareCall("{CALL sp_update_user_password(?, ?)}")
+        ) {
+            statement.setString(1, email);
+            String hashPassword = BCrypt.hashpw(password, BCrypt.gensalt(12));
+            statement.setString(2, hashPassword);
+            int rowsAffected = statement.executeUpdate();
+            if(rowsAffected == 1) {
+                try(CallableStatement statement2 = connection.prepareCall("{CALL sp_delete_password_reset(?)}")
+                ) {
+                    statement2.setString(1, email);
+                    statement2.executeUpdate();
+                }
+                return true;
+            }
+            
+        } catch (SQLException e) {
+            System.out.println("Likely bad SQL query");
+            System.out.println(e.getMessage());
+        }
+        return false;
+    }
 }

@@ -10,29 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EditProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/NewPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/Helpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-sidebar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/edit-profile.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/new-password.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421/storage_v2/_src_/schema/learnx3._9sGAw.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/PrivacyPolicyServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/privacy-policy.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/AllUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/AllUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/SignupServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyValidators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyValidators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/learnx.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/learnx.css" afterDir="false" />
     </list>
     <list id="12920be7-8785-4840-a3d5-763c15d70d26" name="Changes by ahale" comment="" />
-    <list id="a653ad34-0ce1-44b5-8fad-1a90da435e8e" name="Changes by tooth" comment="" />
+    <list id="f9d50aeb-cc8f-4207-ac78-0ce17d30fe25" name="Changes by andres" comment="" />
+    <list id="3ed23c49-4a29-48d2-b6fb-210a27936c41" name="Changes by baylee" comment="" />
+    <list id="d1242d9a-e1d7-43e1-879a-3486a4f7bb05" name="Changes by jared" comment="" />
+    <list id="5333a45e-addf-4f14-8289-cb39b3fa9f2f" name="Changes by Jared" comment="" />
+    <list id="8f6d1807-1969-4d53-820c-4865d0efb7f6" name="Changes by jbroh" comment="" />
+    <list id="3b74daf4-53f4-4143-92df-fdb67e105898" name="Changes by jjbec" comment="" />
+    <list id="c7b66ae6-34ab-43c8-ba50-c094556a661a" name="Changes by jrhsa" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyValidators.java" afterDir="false" />
+    </list>
+    <list id="652b3fe3-ba66-4af5-9c71-4aeecb5a4c3d" name="Changes by logan" comment="" />
+    <list id="e1ce2b8c-2e73-4fad-bf26-b01960e16db2" name="Changes by Randle" comment="" />
+    <list id="7543532f-7cad-4346-aeee-3c18d6d8bd07" name="Changes by School Account" comment="" />
+    <list id="89b5f970-ac83-478c-a364-538fec1afc87" name="Changes by steven" comment="" />
+    <list id="69d11bbd-677b-4847-808f-1f7d95c6adb7" name="Changes by tooth" comment="" />
+    <list id="efa04894-87b3-4d23-8ce5-9963f4f64628" name="Changes by waemc" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,17 +52,14 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -276,9 +282,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.UserDAO" />
       <item itemvalue="Application.CommunicationService" />
       <item itemvalue="Application.JsonReader" />
-      <item itemvalue="Application.UserDAO" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.13" />
     </list>
     <recent_temporary>
@@ -293,7 +299,6 @@
     <attachedChunks>
       <set>
         <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -320,38 +325,7 @@
       <workItem from="1707456579227" duration="118000" />
       <workItem from="1707501429504" duration="1751000" />
       <workItem from="1707861616330" duration="1476000" />
-      <workItem from="1708039386243" duration="15156000" />
-      <workItem from="1708142334594" duration="955000" />
-      <workItem from="1708466472209" duration="724000" />
-      <workItem from="1708639921240" duration="2374000" />
-      <workItem from="1708649321651" duration="9026000" />
-      <workItem from="1708750461999" duration="148000" />
-      <workItem from="1708755279044" duration="612000" />
-      <workItem from="1709009531213" duration="656000" />
-      <workItem from="1709245288843" duration="610000" />
-      <workItem from="1709248701335" duration="13310000" />
-      <workItem from="1709316278708" duration="1100000" />
-      <workItem from="1709693272730" duration="1325000" />
-      <workItem from="1709703538221" duration="3671000" />
-      <workItem from="1709736637713" duration="1804000" />
-      <workItem from="1709749619277" duration="72000" />
-      <workItem from="1709749694918" duration="903000" />
-      <workItem from="1709794927960" duration="510000" />
-      <workItem from="1709851182409" duration="94000" />
-      <workItem from="1709851282620" duration="408000" />
-      <workItem from="1709854811825" duration="100000" />
-      <workItem from="1709855007208" duration="7751000" />
-      <workItem from="1710395814713" duration="613000" />
-      <workItem from="1710615250400" duration="602000" />
-      <workItem from="1710650680980" duration="1763000" />
-      <workItem from="1710819938937" duration="135000" />
-      <workItem from="1710822206064" duration="3000" />
-      <workItem from="1710942526439" duration="663000" />
-      <workItem from="1710993291808" duration="617000" />
-      <workItem from="1710994671705" duration="30000" />
-      <workItem from="1711060915811" duration="12067000" />
-      <workItem from="1711427449914" duration="173000" />
-      <workItem from="1711428106902" duration="32000" />
+      <workItem from="1708039386243" duration="14258000" />
     </task>
     <task id="LOCAL-00001" summary="Add Email Service">
       <option name="closed" value="true" />
@@ -368,11 +342,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
-    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
-    <option featureType="dependencySupport" implementationName="executable:az" />
-    <option featureType="dependencySupport" implementationName="maven-packaging:war" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -411,11 +381,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/EmailServlet.java</url>
           <line>14</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/NewPassword.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/ArtistFromJson.java</url>

@@ -20,6 +20,10 @@ import java.util.Map;
 public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String redirect = req.getParameter("redirect");
+        if(redirect != null) {
+            req.setAttribute("redirect", redirect);
+        }
         req.setAttribute("pageTitle", "Log in to your account");
         req.getRequestDispatcher("WEB-INF/learnx/login.jsp").forward(req, resp);
     }
@@ -29,6 +33,7 @@ public class Login extends HttpServlet {
         String email = req.getParameter("inputEmail1");
         String password = req.getParameter("inputPassword1");
         String[] rememberMe = req.getParameterValues("checkbox-1");
+        String redirect = req.getParameter("redirect");
 
         Map<String, String> results = new HashMap<>();
         results.put("email", email);
@@ -66,7 +71,11 @@ public class Login extends HttpServlet {
                     
                     session.setAttribute("activeUser", userFromDatabase);
                     session.setAttribute("flashMessageSuccess", "Welcome back!");
-                    resp.sendRedirect("learnx");
+                    if(redirect != null) {
+                        resp.sendRedirect(redirect);
+                    } else {
+                        resp.sendRedirect("learnx");
+                    }
                     return;
                 }
             }

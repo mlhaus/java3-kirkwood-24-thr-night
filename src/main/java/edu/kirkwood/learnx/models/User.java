@@ -79,6 +79,7 @@ public class User {
     }
 
     public void setPhone(String phone) {
+        // todo: validate phone
         this.phone = phone;
     }
 
@@ -105,6 +106,10 @@ public class User {
     }
 
     public void setLanguage(String language) {
+        Matcher matcher = MyValidators.languagePattern.matcher(language);
+        if(!matcher.matches()) {
+            throw new IllegalArgumentException("Invalid Language");
+        }
         this.language = language;
     }
 
@@ -113,6 +118,7 @@ public class User {
     }
 
     public void setStatus(String status) {
+        // todo: validate status
         this.status = status;
     }
 
@@ -121,6 +127,7 @@ public class User {
     }
 
     public void setPrivileges(String privileges) {
+        // todo: validate privileges
         this.privileges = privileges;
     }
 

@@ -4,7 +4,7 @@
             <div class="card p-4">
                 <c:choose>
                     <c:when test="${not empty activeUser.firstName and not empty activeUser.lastName}">
-                        <div class="card-title"><h1>${activeUser.firstName}&nbsp;${activeUser.lastName}</h1></div>
+                        <div class="card-title"><h1>${fn:escapeXml(activeUser.firstName)}&nbsp;${fn:escapeXml(activeUser.lastName)}</h1></div>
                     </c:when>
                     <c:otherwise>
                         <div class="card-title"><h1>${activeUser.email}</h1></div>

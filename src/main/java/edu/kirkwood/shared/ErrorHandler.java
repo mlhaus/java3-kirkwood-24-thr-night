@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet("/errorHandler")
 public class ErrorHandler extends HttpServlet {
@@ -26,11 +27,23 @@ public class ErrorHandler extends HttpServlet {
         result += "<br>\nMessage: " + errorMsg;
         result += "<br>\nServlet: " + servlet;
         System.err.println(result);
+
+
+        
         
 
         if(!errorCode.equals("404")) {
             CommunicationService.sendEmail(Dotenv.load().get("ADMIN_EMAIL"), "Unknown error occured", result);
         }
+
+
+        resp.setContentType("text/html");
+
+        // Hello
+//        PrintWriter out = resp.getWriter();
+//        out.println("<html><body>");
+//        out.println("<pre>" + result + "</pre>");
+//        out.println("</body></html>");
 
         
         req.setAttribute("pageTitle", "Error");

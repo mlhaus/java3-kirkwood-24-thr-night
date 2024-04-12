@@ -8,10 +8,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CourseDAO extends Database{
 
@@ -81,8 +78,8 @@ public class CourseDAO extends Database{
         }
     }
 
-    public static Map<Course, Instant> getCourseEnrollments(int limit, int offset, int userId) {
-        Map<Course, Instant> enrollments = new HashMap<>();
+    public static TreeMap<Course, Instant> getCourseEnrollments(int limit, int offset, int userId) {
+        TreeMap<Course, Instant> enrollments = new TreeMap<>();
         try(Connection connection = getConnection();
         CallableStatement statement = connection.prepareCall("{CALL sp_get_courses_by_student(?, ?, ?)}");
         ) {

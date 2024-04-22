@@ -12,6 +12,7 @@ public class Course implements Comparable<Course> {
     private String teacherLastName;
     private int categoryId;
     private String categoryName;
+    private static double price = 1234.567;
 
     public Course() {
     }
@@ -98,6 +99,10 @@ public class Course implements Comparable<Course> {
 
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     @Override

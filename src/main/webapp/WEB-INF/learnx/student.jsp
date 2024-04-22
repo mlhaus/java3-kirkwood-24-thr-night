@@ -93,7 +93,7 @@
                                     <th scope="col" class="border-0 rounded-start">Course Title</th>
 <%--                                    <th scope="col" class="border-0">Total Lessons</th>--%>
 <%--                                    <th scope="col" class="border-0">Completed Lessons</th>--%>
-<%--                                    <th scope="col" class="border-0 rounded-end">Percent Complete</th>--%>
+                                    <th scope="col" class="border-0 rounded-end">Percent Complete</th>
                                 </tr>
                                 </thead>
                                 <!-- Table body START -->
@@ -118,16 +118,17 @@
 <%--                                    <td>40</td>--%>
 
                                     <!-- Table data -->
-<%--                                    <td>--%>
-<%--                                        <!-- Info -->--%>
-<%--                                        <div class="overflow-hidden">--%>
-<%--                                            <h6 class="mb-0">85%</h6>--%>
-<%--                                            <div class="progress progress-sm bg-primary bg-opacity-10">--%>
-<%--                                                <div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">--%>
-<%--                                                </div>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                    </td>--%>
+                                    <td>
+                                        <!-- Info -->
+                                        <div class="overflow-hidden">
+                                            <c:set value="${18 / 24}" var="percent_complete"></c:set>
+                                            <h6 class="mb-0"><fmt:formatNumber value="${percent_complete}" type="percent" maxFractionDigits="1" /></h6>
+                                            <div class="progress progress-sm bg-primary bg-opacity-10">
+                                                <div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: ${percent_complete * 100}%" aria-valuenow="${percent_complete * 100}" aria-valuemin="0" aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 </c:forEach>
                                 </tbody>

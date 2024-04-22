@@ -18,6 +18,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col"></th>
+                                    <th scope="col">Online</th>
                                     <th scope="col">First name</th>
                                     <th scope="col">Last name</th>
                                     <th scope="col">Email</th>
@@ -27,6 +28,10 @@
                             <c:forEach items="${users}" var="user">
                                 <tr>
                                     <td><a href="${appURL}/edit-user?id=${user.id}" class="btn btn-dark">Edit</a></td>
+                                    <td>
+                                        <i class="fa-solid fa-circle text-success"></i>
+                                        <i class="fa-regular fa-circle text-success"></i>
+                                    </td>
                                     <td>${user.firstName}</td>
                                     <td>${user.lastName}</td>
                                     <td>${user.email}</td>

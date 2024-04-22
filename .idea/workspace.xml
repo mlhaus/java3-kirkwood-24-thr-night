@@ -10,49 +10,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/CourseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/DeleteAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EditUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EnrollmentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/StudentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/CourseCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/ErrorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-courses-admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-courses.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/delete-account.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/edit-user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/AllUsersServlet2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/translation.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_ar.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_jp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/demos/all-users.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/scripts/websocket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/styles/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/styles/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eedad3c9-5914-460e-8390-47a35f44d421.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/AllUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/AllUsersServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EditProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/CourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/data/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/ErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyValidators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyValidators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-courses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-courses.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/bottom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/bottom.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-sidebar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/edit-profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/edit-profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/student.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <list id="12920be7-8785-4840-a3d5-763c15d70d26" name="Changes by ahale" comment="" />
-    <list id="58804123-ca8d-4bd7-9dbe-42e384697603" name="Changes by albas" comment="" />
-    <list id="a42e61d7-14ba-4c9b-9e26-2b85def614fa" name="Changes by jared" comment="" />
-    <list id="65002a6d-e9bd-45cc-9efc-edb6c5262d04" name="Changes by jbroh" comment="" />
-    <list id="bcca8f29-4d1a-4d1c-a087-1fb460b8f2da" name="Changes by jjbec" comment="" />
-    <list id="4ecc38ea-83b2-4fe1-9c8a-d69d8b991e60" name="Changes by jrhsa" comment="" />
-    <list id="b070b24d-559e-4bed-9220-ca50cd30974f" name="Changes by logan" comment="" />
-    <list id="f585c8a5-07b1-416c-afb0-f0471f3d5e85" name="Changes by matth" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/Course.java" afterDir="false" />
-    </list>
-    <list id="30f88fca-c578-4790-80dc-363474c11941" name="Changes by School Account" comment="" />
-    <list id="cd4d8bfc-9ecd-4cdb-899f-898382f02095" name="Changes by tooth" comment="" />
+    <list id="4b271551-304c-4163-8e63-41000cbac4dd" name="Changes by andres" comment="" />
+    <list id="048952eb-abf6-44c4-9910-f4cc0526bc9a" name="Changes by baylee" comment="" />
+    <list id="3ef9da60-2c4b-43b8-b447-477afd732033" name="Changes by jared" comment="" />
+    <list id="09f0a196-c9c3-4e2d-bb17-4be2448bd9ec" name="Changes by jbroh" comment="" />
+    <list id="e16614f2-2faf-4e19-a952-39d2b9ce7160" name="Changes by jjbec" comment="" />
+    <list id="67cfdfe7-4f78-4658-b0ef-665a25ebb42c" name="Changes by jrhsa" comment="" />
+    <list id="75fa31d2-25c0-4c59-829a-cfc2cfc660bb" name="Changes by logan" comment="" />
+    <list id="7337c289-7231-4ba0-8441-ab883070f2fa" name="Changes by matth" comment="" />
+    <list id="b7849c0b-03b5-4f67-be5a-e3c90a5569e4" name="Changes by Randle" comment="" />
+    <list id="7bf0fea9-2201-4695-86f0-8c76b97a4eed" name="Changes by School Account" comment="" />
     <list id="06f9d503-ea4b-49b5-882f-99fc4cdc2328" name="Changes by waemc" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +64,9 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -112,6 +113,7 @@
     &quot;Application.CourseDAO.executor&quot;: &quot;Run&quot;,
     &quot;Application.UserDAO.executor&quot;: &quot;Run&quot;,
     &quot;Azure Web App.Azure Web App: java3-kirkwood:marc-kw.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -120,6 +122,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;java3-kirkwood.wasFacetEverAdded&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/k0519415/OneDrive - kirkwood.edu/Kirkwood/Projects/JavaProjects/thr-night-24/java3-kirkwood/src/main/webapp/chat&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -129,20 +132,30 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.kirkwood.demos" />
       <recent name="edu.kirkwood.learnx.controllers" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\k0519415\OneDrive - kirkwood.edu\Kirkwood\Projects\JavaProjects\thr-night-24\java3-kirkwood\src\main\webapp\chat" />
+      <recent name="C:\Users\k0519415\OneDrive - kirkwood.edu\Kirkwood\Projects\JavaProjects\thr-night-24\java3-kirkwood\src\main\java\edu\kirkwood\chat" />
+      <recent name="C:\Users\k0519415\OneDrive - kirkwood.edu\Kirkwood\Projects\JavaProjects\thr-night-24\java3-kirkwood\src\main\webapp\WEB-INF\demos" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\k0519415\OneDrive - kirkwood.edu\Kirkwood\Projects\JavaProjects\thr-night-24\java3-kirkwood\src\main\webapp\chat" />
       <recent name="C:\Users\k0519415\OneDrive - kirkwood.edu\Kirkwood\Projects\JavaProjects\thr-night-24\java3-kirkwood\src\main\webapp\images\learnx" />
       <recent name="C:\Users\k0519415\OneDrive - kirkwood.edu\Kirkwood\Projects\JavaProjects\thr-night-24\java3-kirkwood\src\main\webapp\images" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.kirkwood.demos" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
+  <component name="RunManager" selected="Azure Web App.Azure Web App: java3-kirkwood:marc-kw">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -317,13 +330,49 @@
     <configuration name="Azure Web App: java3-kirkwood:marc-kw" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
       <option name="appServicePlanName" value="" />
       <option name="appServicePlanResourceGroupName" value="" />
-      <option name="appSettingsKey" value="07f69372-db2b-4d63-96c2-ac5dafd1db16" />
+      <option name="appSettingsKey" value="fe7a8f07-edf0-46f0-b66c-ac5196b1af17" />
       <option name="appSettingsToRemove">
         <set />
       </option>
       <option name="applicationLogLevel" value="Error" />
       <option name="artifactIdentifier" value="$PROJECT_DIR$/target/java3-kirkwood-1.0-SNAPSHOT.war" />
       <option name="azureArtifactType" value="Artifact" />
+      <option name="config">
+        <AppServiceConfig>
+          <option name="appName" value="marc-kw" />
+          <option name="appSettingsToRemove" />
+          <option name="diagnosticConfig" />
+          <option name="pricingTier">
+            <PricingTier>
+              <option name="size" value="B1" />
+              <option name="tier" value="Basic" />
+            </PricingTier>
+          </option>
+          <option name="region">
+            <Region>
+              <option name="abbreviation" value="EUS" />
+              <option name="label" value="East US" />
+              <option name="name" value="eastus" />
+            </Region>
+          </option>
+          <option name="resourceGroup" value="java-web" />
+          <option name="runtime">
+            <RuntimeConfig>
+              <option name="image" />
+              <option name="javaVersion" value="Java 17" />
+              <option name="os" value="Linux" />
+              <option name="registryUrl" />
+              <option name="startUpCommand" />
+              <option name="username" />
+              <option name="webContainer" value="Tomcat 10.0" />
+            </RuntimeConfig>
+          </option>
+          <option name="servicePlanName" value="ASP-javaweb-9503" />
+          <option name="servicePlanResourceGroup" value="java-web" />
+          <option name="slotConfig" />
+          <option name="subscriptionId" value="61c9da42-b916-41c9-ba1d-e2722cf959ee" />
+        </AppServiceConfig>
+      </option>
       <option name="creatingAppServicePlan" value="false" />
       <option name="creatingNew" value="false" />
       <option name="creatingResGrp" value="false" />
@@ -368,6 +417,21 @@
       <option name="applicationLogLevel" value="Error" />
       <option name="artifactIdentifier" />
       <option name="azureArtifactType" />
+      <option name="config">
+        <AppServiceConfig>
+          <option name="appName" />
+          <option name="appSettingsToRemove" />
+          <option name="diagnosticConfig" />
+          <option name="pricingTier" />
+          <option name="region" />
+          <option name="resourceGroup" />
+          <option name="runtime" />
+          <option name="servicePlanName" />
+          <option name="servicePlanResourceGroup" />
+          <option name="slotConfig" />
+          <option name="subscriptionId" />
+        </AppServiceConfig>
+      </option>
       <option name="creatingAppServicePlan" value="false" />
       <option name="creatingNew" value="false" />
       <option name="creatingResGrp" value="false" />
@@ -488,7 +552,16 @@
       <workItem from="1712872798415" duration="881000" />
       <workItem from="1712873753268" duration="62000" />
       <workItem from="1712873857567" duration="624000" />
-      <workItem from="1712874945526" duration="10705000" />
+      <workItem from="1712874945526" duration="13359000" />
+      <workItem from="1712941099030" duration="3403000" />
+      <workItem from="1713134900929" duration="25000" />
+      <workItem from="1713198453409" duration="1341000" />
+      <workItem from="1713328247597" duration="3969000" />
+      <workItem from="1713481352848" duration="10293000" />
+      <workItem from="1713546270397" duration="634000" />
+      <workItem from="1713596554478" duration="127000" />
+      <workItem from="1713596684764" duration="2656000" />
+      <workItem from="1713760798181" duration="732000" />
     </task>
     <task id="LOCAL-00001" summary="Add Email Service">
       <option name="closed" value="true" />

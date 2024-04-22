@@ -49,6 +49,7 @@ public class EditProfile extends HttpServlet {
             
             if(!results.containsKey("languageError")) {
                 UserDAO.update(userFromSession);
+                session.setAttribute("language", userFromSession.getLanguage());
                 session.setAttribute("activeUser", userFromSession);
                 session.setAttribute("flashMessageSuccess", "Your profile was updated");
             } else {

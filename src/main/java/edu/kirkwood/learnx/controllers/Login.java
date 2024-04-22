@@ -62,6 +62,7 @@ public class Login extends HttpServlet {
                     HttpSession session = req.getSession();
                     session.invalidate();
                     session = req.getSession();
+                    session.setAttribute("language", userFromDatabase.getLanguage());
                     
                     // Did user check the Remember me box?
                     if(rememberMe != null && rememberMe[0].equals("remember")) {

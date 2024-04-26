@@ -10,48 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f63ff332-2f25-4547-bd08-8108c249eb24" name="Changes" comment="Add Email Service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/AllUsersServlet2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/translation.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_ar.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_de.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_fr.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/translation_jp.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/demos/all-users.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/scripts/websocket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/styles/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat/styles/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/GroupChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/GroupChatEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/MyJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/group-chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/group-chat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/AllUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/AllUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/EditProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/controllers/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/learnx/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-courses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-courses.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/all-users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/dashboard-header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/student.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top-nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/base.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shared/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/chat/MessageEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/bottom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/bottom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chat/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chat/scripts/websocket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chat/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chat/styles/normalize.css" beforeDir="false" />
     </list>
     <list id="12920be7-8785-4840-a3d5-763c15d70d26" name="Changes by ahale" comment="" />
     <list id="4b271551-304c-4163-8e63-41000cbac4dd" name="Changes by andres" comment="" />
-    <list id="048952eb-abf6-44c4-9910-f4cc0526bc9a" name="Changes by baylee" comment="" />
     <list id="3ef9da60-2c4b-43b8-b447-477afd732033" name="Changes by jared" comment="" />
-    <list id="09f0a196-c9c3-4e2d-bb17-4be2448bd9ec" name="Changes by jbroh" comment="" />
+    <list id="09f0a196-c9c3-4e2d-bb17-4be2448bd9ec" name="Changes by jbroh" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/learnx/group-chat.jsp" afterDir="false" />
+    </list>
     <list id="e16614f2-2faf-4e19-a952-39d2b9ce7160" name="Changes by jjbec" comment="" />
     <list id="67cfdfe7-4f78-4658-b0ef-665a25ebb42c" name="Changes by jrhsa" comment="" />
     <list id="75fa31d2-25c0-4c59-829a-cfc2cfc660bb" name="Changes by logan" comment="" />
-    <list id="7337c289-7231-4ba0-8441-ab883070f2fa" name="Changes by matth" comment="" />
-    <list id="b7849c0b-03b5-4f67-be5a-e3c90a5569e4" name="Changes by Randle" comment="" />
     <list id="7bf0fea9-2201-4695-86f0-8c76b97a4eed" name="Changes by School Account" comment="" />
     <list id="06f9d503-ea4b-49b5-882f-99fc4cdc2328" name="Changes by waemc" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +48,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -155,7 +141,7 @@
       <recent name="edu.kirkwood.demos" />
     </key>
   </component>
-  <component name="RunManager" selected="Azure Web App.Azure Web App: java3-kirkwood:marc-kw">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -330,7 +316,7 @@
     <configuration name="Azure Web App: java3-kirkwood:marc-kw" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
       <option name="appServicePlanName" value="" />
       <option name="appServicePlanResourceGroupName" value="" />
-      <option name="appSettingsKey" value="fe7a8f07-edf0-46f0-b66c-ac5196b1af17" />
+      <option name="appSettingsKey" value="df28b2fa-4b0d-4b3c-8278-e82cbc65be7d" />
       <option name="appSettingsToRemove">
         <set />
       </option>
@@ -562,6 +548,11 @@
       <workItem from="1713596554478" duration="127000" />
       <workItem from="1713596684764" duration="2656000" />
       <workItem from="1713760798181" duration="732000" />
+      <workItem from="1713761590612" duration="3685000" />
+      <workItem from="1713818570855" duration="142000" />
+      <workItem from="1713844343537" duration="43000" />
+      <workItem from="1713934502610" duration="611000" />
+      <workItem from="1714084879391" duration="10145000" />
     </task>
     <task id="LOCAL-00001" summary="Add Email Service">
       <option name="closed" value="true" />
@@ -578,11 +569,20 @@
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.enterprise:jakarta.enterprise.cdi-api" />
     <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ejb:jakarta.ejb-api" />
     <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.batch:jakarta.batch-api" />
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
     <option featureType="dependencySupport" implementationName="executable:az" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
     <option featureType="dependencySupport" implementationName="maven-packaging:war" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.faces:jakarta.faces-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -603,11 +603,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/js/loading.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/kirkwood/demos/JsonReader.java</url>
           <line>18</line>

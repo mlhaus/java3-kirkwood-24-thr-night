@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="${appURL}/css/learnx.css">
 <link href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css" rel="stylesheet"/>
 <link rel="stylesheet" href="${appURL}/css/loading.css">
+<c:if test="${pageTitle eq 'Group Chat'}">
+<link rel="stylesheet" href="${appURL}/css/group-chat.css">
+</c:if>
 </head>
 <body>
 <%@include file="/WEB-INF/learnx/top-nav.jsp"%>

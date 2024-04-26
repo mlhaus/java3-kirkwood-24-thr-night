@@ -1,4 +1,4 @@
-package edu.kirkwood.chat;
+package edu.kirkwood.shared;
 
 import jakarta.json.Json;
 import jakarta.json.JsonException;
@@ -8,12 +8,11 @@ import jakarta.websocket.Decoder;
 
 import java.io.StringReader;
 
-public class MessageDecoder implements Decoder.Text<Message> {
-
+public class MyDecoder implements Decoder.Text<MyJson> {
     @Override
-    public Message decode(String s) throws DecodeException {
+    public MyJson decode(String s) throws DecodeException {
         JsonObject jsonObject = Json.createReader(new StringReader(s)).readObject();
-        return new Message(jsonObject);
+        return new MyJson(jsonObject);
     }
 
     @Override
@@ -27,5 +26,4 @@ public class MessageDecoder implements Decoder.Text<Message> {
         }
         return result;
     }
-
 }

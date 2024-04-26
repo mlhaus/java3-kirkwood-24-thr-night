@@ -1,15 +1,14 @@
-package edu.kirkwood.chat;
+package edu.kirkwood.shared;
 
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
 
 import java.io.StringWriter;
 
-public class Message {
-
+public class MyJson {
     private JsonObject json;
 
-    public Message(JsonObject json) {
+    public MyJson(JsonObject json) {
         this.json = json;
     }
 
